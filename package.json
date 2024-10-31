@@ -1,0 +1,30 @@
+{
+  "name": "node-simple-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
+  "dependencies": {
+    "koa": "^2.15.3"
+  },
+  "devDependencies": {
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  }
+}
